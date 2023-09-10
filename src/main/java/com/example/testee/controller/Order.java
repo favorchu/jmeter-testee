@@ -1,33 +1,25 @@
 package com.example.testee.controller;
 
 public class Order {
-    private int id;
+    private String id;
     private String name;
 
-    private String payload;
 
     public Order() {
     }
 
-    public String getPayload() {
-        return payload;
-    }
 
-    public void setPayload(String payload) {
-        this.payload = payload;
-    }
-
-    public Order(int id, String name, String payload) {
+    public Order(String id, String name) {
         this.id = id;
         this.name = name;
-        this.payload = payload;
+
     }
 
-    public long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
